@@ -1,0 +1,211 @@
+.profile-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f9fa;
+  }
+  
+  .profile-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    width: 100%;
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .profile-picture-section {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+  }
+  
+  .profile-picture {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-picture:hover {
+    transform: scale(1.05);
+  }
+  
+  .profile-picture-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0.8rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .profile-picture-section:hover .profile-picture-overlay {
+    opacity: 1;
+  }
+  
+  .upload-button {
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .profile-info {
+    text-align: center;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .profile-info p {
+    color: #666;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .profile-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #eee;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e1e8ed;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .submit-button, .save-button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-button:hover, .save-button:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+  }
+  
+  .submit-button:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .error-message,
+  .success-message {
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    animation: slideIn 0.3s ease;
+  }
+  
+  .error-message {
+    background: #fee;
+    color: #e74c3c;
+  }
+  
+  .success-message {
+    background: #e8f8f5;
+    color: #27ae60;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .profile-card {
+      padding: 1.5rem;
+    }
+    
+    .profile-picture-section {
+      width: 150px;
+      height: 150px;
+    }
+    
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+    }
+    
+    .profile-info h2 {
+      font-size: 1.5rem;
+    }
+  }

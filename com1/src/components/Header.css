@@ -1,0 +1,35 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e6e6e6; /* Match the background color */
+    padding: 10px 20px;
+  }
+  
+  .header-left .utm-logo {
+    height: 50px; /* Adjust logo size */
+  }
+  
+  .header-center h1 {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #444; /* Adjust color for a subtle contrast */
+    text-align: center;
+    margin: 0;
+  }
+  
+  .header-right .login-button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5%;
+    width: 100px;
+    height: 50px;
+    background: #278F6A;
+    display: flex;          /* Add flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    padding: 0;            /* Remove default padding */
+}
+  

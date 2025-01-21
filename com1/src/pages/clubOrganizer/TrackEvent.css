@@ -1,0 +1,115 @@
+.track-event-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.track-event-container h1 {
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.event-table th,
+.event-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.event-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+}
+
+.event-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.9em;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.status-badge.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.approved {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge.rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.error {
+  color: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .event-table {
+    font-size: 0.9em;
+  }
+  
+  .event-table th,
+  .event-table td {
+    padding: 10px;
+  }
+  
+  .status-badge {
+    padding: 4px 8px;
+    font-size: 0.8em;
+  }
+  
+  .track-event-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-table {
+    font-size: 0.8em;
+  }
+  
+  .track-event-container h1 {
+    font-size: 1.5em;
+  }
+}
+
+/* Additional styles for status highlights */
+.status-pending {
+  background-color: rgba(255, 243, 205, 0.1);
+}
+
+.status-approved {
+  background-color: rgba(212, 237, 218, 0.1);
+}
+
+.status-rejected {
+  background-color: rgba(248, 215, 218, 0.1);
+}
